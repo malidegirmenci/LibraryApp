@@ -10,6 +10,12 @@ namespace LibraryApp
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("*******************************************************************");
+            Console.WriteLine();
+            Console.WriteLine("**  Türkçe Kitaplar Kategorisi  **  Yabancı Kitaplar Kategorisi  **");
+            Console.WriteLine();
+
+            Console.ReadKey();
         }
     }
 }
