@@ -185,7 +185,19 @@ namespace LibraryApp
             }
             if (option.Equals('6'))
             {
-                
+                Console.WriteLine();
+                Console.WriteLine("***** Tahmin Oyunu  *****");
+                int guest = 0;
+                Random rnd = new Random();
+                int numRnd = rnd.Next(1, 100);
+                while (numRnd != guest)
+                {
+                    Console.Write("Enter a number: ");
+                    guest = Convert.ToInt16(Console.ReadLine());
+                    if (guest > numRnd) { Console.WriteLine("Enter number less than your number"); }
+                    else if (guest < numRnd) { Console.WriteLine("Enter number greater than your number"); }
+                    else { Console.WriteLine("You are right! Congratulations!"); }
+                }
             }
 
 
